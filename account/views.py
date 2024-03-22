@@ -118,3 +118,13 @@ def set_new_password_view(request):
         serializer.is_valid(raise_exception=True)
         
         return Response({'message': 'Password Reset Successful'}, status=status.HTTP_200_OK)
+  
+@ api_view(["POST"])
+@permission_classes([IsAuthenticated])
+def logout_view(request):
+    if request.method == 'POST':
+        serializer = SetNewPassSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+   

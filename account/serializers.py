@@ -1,5 +1,4 @@
 from rest_framework import serializers
-from rest_framework.exceptions import AuthenticationFailed
 from django.contrib.auth.password_validation import validate_password
 from django.core.exceptions import ValidationError as DjangoValidationError
 from django.contrib.auth import authenticate
@@ -10,6 +9,9 @@ from django.contrib.sites.shortcuts import get_current_site
 from django.urls import reverse
 from .models import User
 from .utils import send_email
+from rest_framework.exceptions import AuthenticationFailed
+from rest_framework_simplejwt.tokens import RefreshToken, TokenError
+
 
 class UserSerializer(serializers.ModelSerializer):
     password1 = serializers.CharField(max_length=30, min_length=12, write_only=True)
@@ -123,7 +125,7 @@ class PassResetSerializer(serializers.Serializer):
 class SetNewPassSerializer(serializers.Serializer):
     password = serializers.CharField(max_length=30, min_length=12, write_only=True)
     confirm_password = serializers.CharField(max_length=30, min_length=12, write_only=True)
-    uidb = serializers.CharField(write_only=True)
+    uidb64 = serializers.CharField(write_only=True)
     token = serializers.CharField(write_only=True)
     
     class Meta:
@@ -139,7 +141,7 @@ class SetNewPassSerializer(serializers.Serializer):
             
             token = attrs.get('token')
             uidb64 = attrs.get('uidb64')
-            password = attrs.get('uidb64')
+            password = attrs.get('password')
             confirm_password = attrs.get('confirm_password')
             
             user_id = force_str(urlsafe_base64_decode(uidb64))
@@ -154,6 +156,24 @@ class SetNewPassSerializer(serializers.Serializer):
         
         except Exception as e:
             raise serializers.AuthenticationFailed("Link has expired")
+        
+class LogOutSerializer(serializers.Serializer):
+    refresh_token = serializers.CharField()
+    
+    default_error_message = {
+        'bad_token': ("Token is Invalid or has expired")
+    }
+    def validate(self, attrs):
+        self.token = attrs.get('refresh_token')
+        return attrs
+    def save(self, **kwargs):
+        try:
+            token = RefreshToken(self.token)
+            to.token_blacklist()
+        except TokenError:
+            return self.fail('bad_token')
+        return super().save(**kwargs)
+        
         
         
         

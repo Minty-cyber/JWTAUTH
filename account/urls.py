@@ -10,6 +10,8 @@ urlpatterns = [
     path('password-reset/', password_reset_view, name='password-reset'),
     path('password-reset-confirm/<uidb64>/<token>/', password_reset_confirm_view, name='password-reset-confirm'),
     path('set_new_pass/', set_new_password_view, name='set-password'),
+    path('logout/', logout_view, name='logout'),
+    
     
     
 ]
