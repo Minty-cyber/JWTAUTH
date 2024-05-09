@@ -18,4 +18,4 @@ class AuthSerializer(serializers.Serializer):
             raise serializers.ValidationError(
                 "This token is invalid or expired"
             )
-        
+        if google_user_data['auth'] != settings.GOOGLE_CLIENT_ID
