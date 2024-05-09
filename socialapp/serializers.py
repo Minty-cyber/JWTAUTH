@@ -6,4 +6,5 @@ from rest_framework.exceptions import AuthenticationFailed
 
 
 class AuthSerializer(serializers.Serializer):
+    access_token = serializers.CharField(min_length=6)
     
