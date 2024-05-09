@@ -1,4 +1,5 @@
 import SignUp from "./SignUp";
 import Login from "./LogIn";
-import Profile from "./Profile"
+import Profile from "./Profile";
+import ForgotPass from "./ForgotPass"
 
