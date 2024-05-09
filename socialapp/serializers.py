@@ -5,3 +5,5 @@ from rest_framework.exceptions import AuthenticationFailed
 
 
 
+class AuthSerializer(serializers.Serializer):
+    
