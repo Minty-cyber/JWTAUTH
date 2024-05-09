@@ -18,3 +18,4 @@ class AuthSerializer(serializers.Serializer):
             raise serializers.ValidationError(
                 "This token is invalid or expired"
             )
+        
