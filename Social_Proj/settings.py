@@ -168,3 +168,4 @@ EMAIL_USE_TLS = Tru
 
 
 GOOGLE_CLIENT_ID = '1042714286362-gvhb1plmqeno08cjt6irjcooboj5slvl.apps.googleusercontent.com'
+
