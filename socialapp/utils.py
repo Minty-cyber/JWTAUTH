@@ -31,7 +31,7 @@ class Auth():
         user = User.objects.filter(email=email)
         if user.exists():
             if provider == user[0].auth_provider:
-               auth_user = login_user()
+               auth_user = login_user(email, settings.SOCIAL_AUTH_PASSWORD)
             else:
                 raise AuthenticationFailed(
                     detail=f'Please login with {user[0].auth_provider}'
