@@ -13,8 +13,7 @@ function App() {
       <Routes>
         <Route path='/'
           element = {<SignUp/>}
-        >
-
+        
         </Route>
       </Routes>
     </Router>
