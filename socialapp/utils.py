@@ -16,7 +16,7 @@ class Auth():
         except Exception as e:
             return 'Token has expired or is Invlaid'
 
-    def socail_user(email, password):
+    def social_user(email, password):
         user = authenticate(email=email, password=password)
         token = user.tokens()
         return {
