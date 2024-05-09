@@ -30,7 +30,7 @@ class Auth():
                 }
             else:
                 raise AuthenticationFailed(
-                    
+                    detail=f'Please login with {user[0].auth_provider}'
                 )
         
             
