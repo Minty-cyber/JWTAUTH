@@ -35,7 +35,7 @@ const SignUp = () => {
                  <label htmlFor="">Password</label>
                  <input type="password"
                   className='email-form'  
-                  name="first_name" 
+                  name="password" 
                   value={email}  
                   />
                </div>
