@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState} from 'react'
 
 const SignUp = () => {
   return (
@@ -7,7 +7,14 @@ const SignUp = () => {
         <div>
           <h2>Create Account</h2>
           <form action="">
-            
+              <div className='form-group'>
+                 <label htmlFor="">Email Address:</label>
+                 <input type="text"
+                  className='email-form'  
+                  name="email" 
+                  value={email}  
+                  onChange={handleOnchange} />
+               </div>
           </form>
         </div>
       </div>
