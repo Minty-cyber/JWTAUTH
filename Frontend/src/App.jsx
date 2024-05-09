@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
-import { SignUp, LogIn, VerifyEmail, ForgotPass } from "./components"
+import { SignUp, LogIn, VerifyEmail} from "./components"
 
 function App() {
   return (
