@@ -40,6 +40,6 @@ class Auth():
             'password': settings.SOCIAL_AUTH_PASSWORD
         }
         register_user=User.objects.create_user(**new_user)
-        
+        register_user.auth_provider=provider
         
             
