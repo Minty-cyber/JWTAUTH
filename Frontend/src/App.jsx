@@ -11,7 +11,7 @@ function App() {
 
     <Router>
       <Routes>
-        <Route path='/'>element = {<SignUp/>}</Route>
+        <Route path='/' element = {<SignUp/>} />
       </Routes>
     </Router>
       
