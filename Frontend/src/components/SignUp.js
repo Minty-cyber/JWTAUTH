@@ -5,7 +5,7 @@ const SignUp = () => {
     <div>
       <div>
         <div>
-          
+          <h2>Create Account</h2>
         </div>
       </div>
     </div>
