@@ -12,6 +12,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element = {<SignUp/>} />
+        <Route path='/' element = {<LogIn/>} />
         <Route path='/' element = {<SignUp/>} />
         <Route path='/' element = {<VerifyEmail/>} />
 
