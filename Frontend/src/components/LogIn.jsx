@@ -15,22 +15,7 @@ const LogIn = () => {
                 // value={email}  
                 />
              </div>
-             <div className='form-group'>
-               <label htmlFor="">First Name</label>
-               <input type="text"
-                className='email-form'  
-                name="first_name" 
-                // value={email}  
-                />
-             </div>
-             <div className='form-group'>
-               <label htmlFor="">Last Name</label>
-               <input type="text"
-                className='email-form'  
-                name="last_name" 
-                // value={email}  
-                />
-             </div>
+             
              <div className='form-group'>
                <label htmlFor="">Password</label>
                <input type="password"
