@@ -36,17 +36,18 @@ class Auth():
                 raise AuthenticationFailed(
                     detail=f'Please login with {user[0].auth_provider}'
                 )
-            
-        new_user = {
-            'email': 'email',
-            'first_name': 'first_name',
-            'last_name': 'last_name',
-            'password': settings.SOCIAL_AUTH_PASSWORD
-        }
-        register_user=User.objects.create_user(**new_user)
-        register_user.auth_provider=provider
-        register_user.is_verified = True
-        register_user.save()
-        login_user(email, settings.SOCIAL_AUTH_PASSWORD)
+        else:
+                
+            new_user = {
+                'email': 'email',
+                'first_name': 'first_name',
+                'last_name': 'last_name',
+                'password': settings.SOCIAL_AUTH_PASSWORD
+            }
+            register_user=User.objects.create_user(**new_user)
+            register_user.auth_provider=provider
+            register_user.is_verified = True
+            register_user.save()
+            login_user(email, settings.SOCIAL_AUTH_PASSWORD)
 
             
