@@ -12,6 +12,7 @@ class AuthSerializer(serializers.Serializer):
     def validate_access_token(self, access_token):
         google_user_data = Auth.validate(access_token)
         try:
+            user_id = google_user_data
             
         except:
             raise serializers.ValidationError(
