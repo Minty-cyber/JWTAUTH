@@ -6,6 +6,7 @@ from .manager import *
 # Create your models here.
 
 AUTH_PROVIDERS = {
+    'email': 'email',
     
 }
 
