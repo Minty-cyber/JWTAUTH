@@ -26,3 +26,4 @@ class AuthSerializer(serializers.Serializer):
         first_name = google_user_data['given_name']
         last_name =  google_user_data['family_name']
         
+        
