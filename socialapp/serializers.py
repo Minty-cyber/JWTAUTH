@@ -14,4 +14,4 @@ class AuthSerializer(serializers.Serializer):
         try:
             
         except:
-            raise serializers
+            raise serializers.AuthenticationFailed
