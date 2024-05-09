@@ -7,7 +7,7 @@ from .manager import *
 
 AUTH_PROVIDERS = {
     'email': 'email',
-    
+    'google': 'google'
 }
 
 class User(AbstractBaseUser, PermissionsMixin):
