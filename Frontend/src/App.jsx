@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
-import { SignUp, LogIn, VerifyEmail, ForgotPass } from "./components"
+import { SignUp, LogIn, VerifyEmail, ForgotPass, Login } from "./components"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +12,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element = {<SignUp/>} />
-        <Route path='/' element = {<SignUp/>} />
+        <Route path='/' element = {<LogIn/>} />
 
       </Routes>
     </Router>
