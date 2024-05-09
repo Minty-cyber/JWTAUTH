@@ -167,5 +167,5 @@ EMAIL_USE_TLS = True
 
 
 
-GOOGLE_CLIENT_ID = '1042714286362-gvhb1plmqeno08cjt6irjcooboj5slvl.apps.googleusercontent.com'
+GOOGLE_CLIENT_ID = env('GOOGLE_CLIENT_ID')
 GOOGLE_CLIENT_SECRET = "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"
