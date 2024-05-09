@@ -22,3 +22,5 @@ class AuthSerializer(serializers.Serializer):
             raise AuthenticationFailed(
                 detail=f"Could not verify user"
             )
+        email = google_user_data['email']
+        
