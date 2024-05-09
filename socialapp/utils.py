@@ -29,6 +29,8 @@ class Auth():
                     'refresh_token': str(token.get('refresh'))
                 }
             else:
-                
+                raise AuthenticationFailed(
+                    
+                )
         
             
