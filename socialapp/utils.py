@@ -23,11 +23,11 @@ class Auth():
                 login_user = authenticate(email=email, password=settings.SOCIAL_AUTH_PASSWORD)
                 token = user.tokens()
         
-        return {
-            'email': user.email,
-            'full_name': user.get_name,
-            'access_token': str(token.get('access')),
-            'refresh_token': str(token.get('refresh'))
-        }
+                return {
+                    'email': user.email,
+                    'full_name': user.get_name,
+                    'access_token': str(token.get('access')),
+                    'refresh_token': str(token.get('refresh'))
+                }
         
             
