@@ -45,7 +45,7 @@ const SignUp = () => {
                  className='p'  
                  name="password2" 
                  value={password2} 
-                 onChange={handleOnchange}/>
+                 />
                </div>
           </form>
         </div>
