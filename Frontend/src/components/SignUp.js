@@ -13,7 +13,7 @@ const SignUp = () => {
                   className='email-form'  
                   name="email" 
                   value={email}  
-                  onChange={handleOnchange} />
+                  />
                </div>
           </form>
         </div>
