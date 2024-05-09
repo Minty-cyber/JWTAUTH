@@ -47,13 +47,6 @@ class Auth():
         register_user.auth_provider=provider
         register_user.is_verified = True
         register_user.save()
-        login_user = authenticate(email=email, password=settings.SOCIAL_AUTH_PASSWORD)
-        token = login_user.tokens()
-        return {
-            'email': login_user.email,
-            'full_name': login_user.get_name,
-            'access_token': str(token.get('access')),
-            'refresh_token': str(token.get('refresh'))
-        }
-        
+        login_user(email, settings.SOCIAL_AUTH_PASSWORD)
+
             
