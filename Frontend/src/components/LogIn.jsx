@@ -5,7 +5,7 @@ const LogIn = () => {
     <div className='form-container'>
     <div className='wrapper'>
       <div>
-        <h2>Create Account</h2>
+        <h2>Log In</h2>
         <form action="">
             <div className='form-group'>
                <label htmlFor="">Email Address:</label>
