@@ -17,13 +17,7 @@ class Auth():
             return 'Token has expired or is Invlaid'
 
     def login_user(email, password):
-        
-        
-    def register_social_user(provider, email, first_name, last_name):
-        user = User.objects.filter(email=email)
-        if user.exists():
-            if provider == user[0].auth_provider:
-                login_user = authenticate(email=email, password=settings.SOCIAL_AUTH_PASSWORD)
+        login_user = authenticate(email=email, password=settings.SOCIAL_AUTH_PASSWORD)
                 token = login_user.tokens()
                 return {
                     'email': login_user.email,
@@ -31,6 +25,13 @@ class Auth():
                     'access_token': str(token.get('access')),
                     'refresh_token': str(token.get('refresh'))
                 }
+        
+        
+    def register_social_user(provider, email, first_name, last_name):
+        user = User.objects.filter(email=email)
+        if user.exists():
+            if provider == user[0].auth_provider:
+                
             else:
                 raise AuthenticationFailed(
                     detail=f'Please login with {user[0].auth_provider}'
