@@ -32,5 +32,7 @@ class Auth():
                 raise AuthenticationFailed(
                     detail=f'Please login with {user[0].auth_provider}'
                 )
+            
+        
         
             
