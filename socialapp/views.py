@@ -9,4 +9,5 @@ class AuthSignInView(GenericAPIView):
     
     def post(self, request):
         serializer = self.serializer_class(data=request.data)
+        ser
         
