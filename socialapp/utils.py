@@ -20,6 +20,6 @@ class Auth():
         user = User.objects.filter(email=email)
         if user.exists():
             if provider == user[0].auth_provider:
-                login_user = authenticate(email=email)
+                login_user = authenticate(email=email, password=settings.SOCIAL_AUTH_PASSWORD)
         
             
