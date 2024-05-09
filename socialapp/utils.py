@@ -33,6 +33,8 @@ class Auth():
                     detail=f'Please login with {user[0].auth_provider}'
                 )
             
-        
+        new_user = {
+            
+        }
         
             
