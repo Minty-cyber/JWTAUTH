@@ -5,7 +5,9 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from .manager import *
 # Create your models here.
 
-
+AUTH_PROVIDERS = {
+    
+}
 
 class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(max_length=100, unique=True, verbose_name=g("Email Address"))
