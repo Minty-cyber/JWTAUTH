@@ -14,4 +14,6 @@ class AuthSerializer(serializers.Serializer):
         try:
             
         except:
-            raise serializers.AuthenticationFailed
+            raise serializers.ValidationError(
+                "This token is invalid or expired"
+            )
