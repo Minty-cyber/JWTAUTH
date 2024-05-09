@@ -21,8 +21,13 @@ class Auth():
         if user.exists():
             if provider == user[0].auth_provider:
                 login_user = authenticate(email=email, password=settings.SOCIAL_AUTH_PASSWORD)
-                return{
-                    
-                }
+                token = user.tokens()
+        
+        return {
+            'email': user.email,
+            'full_name': user.get_name,
+            'access_token': str(token.get('access')),
+            'refresh_token': str(token.get('refresh'))
+        }
         
             
