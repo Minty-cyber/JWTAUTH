@@ -10,7 +10,7 @@ class Auth():
     @staticmethod
     def validate(access_token):
         try:
-            id_info = id_token.verify_oauth2_token 
+            id_info = id_token.verify_oauth2_token(access_token, requests.Request()) 
             
         except Exception as e:
             return 'Token has expired or is Invlaid'
