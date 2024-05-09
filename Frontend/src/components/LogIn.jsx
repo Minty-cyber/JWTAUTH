@@ -24,14 +24,7 @@ const LogIn = () => {
                 // value={email}  
                 />
              </div>
-             <div className='form-group'>
-               <label htmlFor="">Confirm Password:</label>
-               <input type="text" 
-               className='p'  
-               name="password2" 
-              //  value={password2} 
-               />
-             </div>
+             
              <input type="submit" value= "Submit" className='submitButton' />
         </form>
       </div>
