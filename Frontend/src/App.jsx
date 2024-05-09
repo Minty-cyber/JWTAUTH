@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
-import { SignUp, LogIn, VerifyEmail} from "./components"
+import Profile from './components/Profile';
+import Signup from './components/Signup';
+import Login from './components/Login';
+import VerifyEmail from './components/VerifyEmail';
 
 function App() {
   return (
