@@ -39,6 +39,6 @@ class Auth():
             'last_name': 'last_name',
             'password': settings.SOCIAL_AUTH_PASSWORD
         }
-        register_user=User.objects.create_user
+        register_user=User.objects.create_user(**new_user)
         
             
