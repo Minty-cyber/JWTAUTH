@@ -10,4 +10,5 @@ class AuthSignInView(GenericAPIView):
     def post(self, request):
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
+        data
         
