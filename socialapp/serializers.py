@@ -13,3 +13,4 @@ class AuthSerializer(serializers.Serializer):
         google_user_data = Auth.validate(access_token)
         try:
             
+        except
