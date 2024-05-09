@@ -42,4 +42,5 @@ class Auth():
         register_user=User.objects.create_user(**new_user)
         register_user.auth_provider=provider
         
+        
             
