@@ -19,4 +19,6 @@ class AuthSerializer(serializers.Serializer):
                 "This token is invalid or expired"
             )
         if google_user_data['aud'] != settings.GOOGLE_CLIENT_ID:
-            
+            raise AuthenticationFailed(
+                detail=f""
+            )
