@@ -24,7 +24,7 @@ class Auth():
             'full_name': login_user.get_name,
             'access_token': str(token.get('access')),
             'refresh_token': str(token.get('refresh'))
-                }
+        }
         
         
     def register_social_user(provider, email, first_name, last_name):
