@@ -10,6 +10,7 @@ class Auth():
     @staticmethod
     def validate(access_token):
         try:
+            id_info = 
             
         except Exception as e:
             return 'Token has expired or is Invlaid'
