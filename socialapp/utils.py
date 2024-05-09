@@ -10,7 +10,9 @@ class Auth():
     @staticmethod
     def validate(access_token):
         try:
-            id_info = id_token.verify_oauth2_token(access_token, requests.Request()) 
+            id_info = id_token.verify_oauth2_token(access_token, requests.Request())
+            if "accounts.google.com" in id_info['iss']:
+                 
             
         except Exception as e:
             return 'Token has expired or is Invlaid'
