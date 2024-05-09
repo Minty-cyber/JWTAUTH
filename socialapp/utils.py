@@ -15,6 +15,7 @@ class Auth():
                 return id_info
         except Exception as e:
             return 'Token has expired or is Invlaid'
+    
         
     def register_social_user(provider, email, first_name, last_name):
         user = User.objects.filter(email=email)
