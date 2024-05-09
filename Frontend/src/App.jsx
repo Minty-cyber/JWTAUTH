@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Profile from './components/Profile';
-import Signup from './components/Signup';
-import Login from './components/Login';
+import Signup from './components/SignUp';
+import Login from './components/LogIn';
 import VerifyEmail from './components/VerifyEmail';
 
 function App() {
