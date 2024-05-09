@@ -34,6 +34,7 @@ class Auth():
                 )
             
         new_user = {
+            'email': 'email',
             
         }
         
