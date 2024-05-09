@@ -48,6 +48,6 @@ class Auth():
             register_user.auth_provider=provider
             register_user.is_verified = True
             register_user.save()
-            login_user(email, settings.SOCIAL_AUTH_PASSWORD)
+            login_user(email = register_user.email, settings.SOCIAL_AUTH_PASSWORD)
 
             
