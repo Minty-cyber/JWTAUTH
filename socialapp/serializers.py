@@ -20,5 +20,5 @@ class AuthSerializer(serializers.Serializer):
             )
         if google_user_data['aud'] != settings.GOOGLE_CLIENT_ID:
             raise AuthenticationFailed(
-                detail=f""
+                detail=f"Could not verify user"
             )
