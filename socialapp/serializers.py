@@ -27,5 +27,5 @@ class AuthSerializer(serializers.Serializer):
         last_name =  google_user_data['family_name']
         provider = 'google'
         
-        return register_social_user(provider, email, first_name)
+        return register_social_user(provider, email, first_name, last_name)
         
