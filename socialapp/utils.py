@@ -22,7 +22,6 @@ class Auth():
             if provider == user[0].auth_provider:
                 login_user = authenticate(email=email, password=settings.SOCIAL_AUTH_PASSWORD)
                 token = user.tokens()
-        
                 return {
                     'email': user.email,
                     'full_name': user.get_name,
