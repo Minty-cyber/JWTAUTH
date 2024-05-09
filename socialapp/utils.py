@@ -19,6 +19,6 @@ class Auth():
     def register_social_user(provider, email, first_name, last_name):
         user = User.objects.filter(email=email)
         if user.exists():
-            if provider == 
+            if provider == user[0]
         
             
