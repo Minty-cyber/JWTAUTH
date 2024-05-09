@@ -20,8 +20,8 @@ class Auth():
         login_user = authenticate(email=email, password=password)
         token = user.tokens()
         return {
-            'email': login_user.email,
-            'full_name': login_user.get_name,
+            'email': user.email,
+            'full_name': user.get_name,
             'access_token': str(token.get('access')),
             'refresh_token': str(token.get('refresh'))
         }
