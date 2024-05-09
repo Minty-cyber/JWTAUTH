@@ -18,7 +18,7 @@ class Auth():
 
     def login_user(email, password):
         login_user = authenticate(email=email, password=password)
-        token = login_user.tokens()
+        token = user.tokens()
         return {
             'email': login_user.email,
             'full_name': login_user.get_name,
