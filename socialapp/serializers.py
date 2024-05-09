@@ -23,5 +23,6 @@ class AuthSerializer(serializers.Serializer):
                 detail=f"Could not verify user"
             )
         email = google_user_data['email']
-        first_name = google_user_data['give_name']
+        first_name = google_user_data['given_name']
+        last_name =  google_user_data['family_name']
         
