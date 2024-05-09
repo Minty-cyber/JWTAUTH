@@ -37,7 +37,7 @@ class Auth():
             'email': 'email',
             'first_name': 'first_name',
             'last_name': 'last_name',
-            'password': settings.SOCIAL_AUTH_PASs
+            'password': settings.SOCIAL_AUTH_PASSWORD
         }
         
             
