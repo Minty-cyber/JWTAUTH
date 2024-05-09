@@ -39,6 +39,14 @@ const SignUp = () => {
                   value={email}  
                   />
                </div>
+               <div className='form-group'>
+                 <label htmlFor="">Confirm Password:</label>
+                 <input type="text" 
+                 className='p'  
+                 name="password2" 
+                 value={password2} 
+                 onChange={handleOnchange}/>
+               </div>
           </form>
         </div>
       </div>
