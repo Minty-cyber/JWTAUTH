@@ -7,4 +7,5 @@ from rest_framework.exceptions import AuthenticationFailed
 
 
 class Auth():
-    
+    def validate(access_token):
+        
