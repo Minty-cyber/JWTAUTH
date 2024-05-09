@@ -168,4 +168,4 @@ EMAIL_USE_TLS = Tru
 
 
 GOOGLE_CLIENT_ID = '1042714286362-gvhb1plmqeno08cjt6irjcooboj5slvl.apps.googleusercontent.com'
-GOOGLE_CLIENT_SECRET = ""
+GOOGLE_CLIENT_SECRET = "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"
