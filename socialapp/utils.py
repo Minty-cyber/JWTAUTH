@@ -17,7 +17,7 @@ class Auth():
             return 'Token has expired or is Invlaid'
 
     def login_user(email, password):
-        login_user = authenticate(email=email, password=settings.SOCIAL_AUTH_PASSWORD)
+        login_user = authenticate(email=email, password=password)
         token = login_user.tokens()
         return {
             'email': login_user.email,
