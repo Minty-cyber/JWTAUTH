@@ -6,6 +6,9 @@ const SignUp = () => {
       <div>
         <div>
           <h2>Create Account</h2>
+          <form action="">
+            
+          </form>
         </div>
       </div>
     </div>
