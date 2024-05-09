@@ -3,7 +3,7 @@ import React , {useState} from 'react'
 const SignUp = () => {
   return (
     <div className='form-container'>
-      <div className='wrapper'>
+      <div style={{width:"100%"}} className='wrapper'>
         <div>
           <h2>Create Account</h2>
           <form action="">
