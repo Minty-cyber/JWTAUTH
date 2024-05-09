@@ -15,6 +15,14 @@ const SignUp = () => {
                   value={email}  
                   />
                </div>
+               <div className='form-group'>
+                 <label htmlFor="">Email Address:</label>
+                 <input type="text"
+                  className='email-form'  
+                  name="email" 
+                  value={email}  
+                  />
+               </div>c
           </form>
         </div>
       </div>
