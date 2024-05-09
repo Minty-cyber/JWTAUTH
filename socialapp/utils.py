@@ -19,7 +19,7 @@ class Auth():
     def login_user(email, password):
         login_user = authenticate(email=email, password=settings.SOCIAL_AUTH_PASSWORD)
         token = login_user.tokens()
-                return {
+        return {
                     'email': login_user.email,
                     'full_name': login_user.get_name,
                     'access_token': str(token.get('access')),
