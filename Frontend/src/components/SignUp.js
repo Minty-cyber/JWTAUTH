@@ -33,7 +33,7 @@ const SignUp = () => {
                </div>
                <div className='form-group'>
                  <label htmlFor="">First Name</label>
-                 <input type="text"
+                 <input type="password"
                   className='email-form'  
                   name="first_name" 
                   value={email}  
