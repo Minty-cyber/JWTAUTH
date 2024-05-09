@@ -7,5 +7,6 @@ from rest_framework.exceptions import AuthenticationFailed
 
 
 class Auth():
+    @staticmethod
     def validate(access_token):
         
