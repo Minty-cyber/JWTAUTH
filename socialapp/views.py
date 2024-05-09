@@ -7,4 +7,5 @@ from rest_framework import status
 class AuthSignInView(GenericAPIView):
     serializer_class = AuthSerializer
     
-    def 
+    def post(self, request):
+        
