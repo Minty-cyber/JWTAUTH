@@ -11,11 +11,11 @@ function App() {
 
     <Router>
       <Routes>
-        <Route path='/' element = {<SignUp/>} />
+        <Route path='' element = {<SignUp/>} />
         <Route path='/login' element = {<LogIn/>} />
         <Route path='/dashboard' element = {<SignUp/>} />
         <Route path='/otp/verify' element = {<VerifyEmail/>} />
-        <Route path='/' element = {<ForgotPass/>} />
+        <Route path='/forgot_pass' element = {<ForgotPass/>} />
 
 
       </Routes>
