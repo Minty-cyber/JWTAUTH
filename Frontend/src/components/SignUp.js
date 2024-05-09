@@ -16,13 +16,13 @@ const SignUp = () => {
                   />
                </div>
                <div className='form-group'>
-                 <label htmlFor="">Email Address:</label>
+                 <label htmlFor="">First</label>
                  <input type="text"
                   className='email-form'  
                   name="email" 
                   value={email}  
                   />
-               </div>c
+               </div>
           </form>
         </div>
       </div>
