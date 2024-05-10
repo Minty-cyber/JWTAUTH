@@ -1,7 +1,7 @@
 import React , {useState} from 'react'
 import axios from 'axios'
 import {useNavigate} from "react-router-dom"
-import {toast } from 'reac'
+import {toast } from 'react-toastify'
 
 const SignUp = () => {
   const redirect = useNavigate();
@@ -41,6 +41,7 @@ const SignUp = () => {
 
       if (res.status == 200) {
         redirect("/otp/verify")
+        toast()
 
       }
       // setLoading(true) //starting the loading when the form is submitted
