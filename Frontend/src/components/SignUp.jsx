@@ -14,6 +14,8 @@ const SignUp = () => {
       ...formdata, [e.target.name]:e.target.value
     })
   }
+
+  
   return (
     <div className='form-container'>
       <div className='wrapper'>
