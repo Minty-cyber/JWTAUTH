@@ -41,7 +41,7 @@ const SignUp = () => {
       const response = res.data
       console.log(response)
       if (res.status == 201) {// a new entry is created  and 
-        redirect("/otp/verify") // the user is redirected to the verify email page
+        redirect("/otp/verify") // the user is redirected to the verify email pagec
         toast.success(response.message)// 
 
       }
