@@ -40,6 +40,7 @@ const SignUp = () => {
 
       if (res.status == 200) {
         redirect("/otp/verify")
+        
       }
       // setLoading(true) //starting the loading when the form is submitted
       // setTimeout(() => {
