@@ -37,7 +37,7 @@ const SignUp = () => {
       }, 2000);
        //the error message disappears after some time
     }else{
-      const res = await axios.post('http://127.0.0.1:8000/api/auth/register/', formdata)// Add formdata to the backend 
+      const res = await axios.post('http://127.0.0.1:8000/api/auth/register', formdata)// Add formdata to the backend 
       const response = res.data
       console.log(response)
       if (res.status == 201) {// a new entry is created  and 
