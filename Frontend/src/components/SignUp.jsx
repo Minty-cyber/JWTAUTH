@@ -27,6 +27,7 @@ const SignUp = () => {
       <div className='wrapper'>
         <div>
           <h2>Create Account</h2>
+          <p>{error ? error: ""}</p>
           <form action="">
               <div className='form-group'>
                  <label htmlFor="">Email Address:</label>
