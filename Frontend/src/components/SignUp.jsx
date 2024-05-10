@@ -34,9 +34,7 @@ const SignUp = () => {
         setLoading(false);
         setSuccessMessage("Account Created Successfully")
 
-      }
-
-    )
+      },)
       
       
     }
