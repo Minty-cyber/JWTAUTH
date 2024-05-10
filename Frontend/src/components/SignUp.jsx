@@ -26,8 +26,9 @@ const SignUp = () => {
   const handleSubmit = (e) =>{
     e.preventDefault();
     if (!email || !first_name || !last_name || !password || !password2){
+      setError("All fields are required");
+
       setTimeout(() => {
-        setError("All fields are required");
       }, 2000); //the error message disappears after some time
     }else{
       setLoading(true) //starting the loading when the form is submitted
