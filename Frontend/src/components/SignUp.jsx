@@ -37,7 +37,9 @@ const SignUp = () => {
       setTimeout(() => {
         setLoading(false); //Removing the loading from there
         setSuccessMessage("Account Created Successfully") 
-        set//Initializing the message
+        setTimeout(() => {
+          
+        }, 2000);//Initializing the message
       },2000)
       
       
