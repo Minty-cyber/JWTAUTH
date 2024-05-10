@@ -9,7 +9,7 @@ const SignUp = () => {
     password2:"",
   })
 
-  const { email, first_name, last_name, password, password2 } = formdata;
+  const { email, first_name, last_name, password, password2 } = formdata; //Destructuring very important
 
   const handleOnChange = (e) => {
     setFormData({
