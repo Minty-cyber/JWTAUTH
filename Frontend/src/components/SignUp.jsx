@@ -2,6 +2,8 @@ import React , {useState} from 'react'
 
 const SignUp = () => {
   const [formdata, setFormData] = useState({
+    email: "",
+    first_name: "",
     
   })
   return (
