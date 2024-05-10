@@ -31,7 +31,8 @@ const SignUp = () => {
     }else{
       setLoading(true) //starting the loading when the form is submitted
       setTimeout(() => {
-        setLoading(false)
+        setLoading(false);
+        
       }
 
     )
