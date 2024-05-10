@@ -47,7 +47,7 @@ const SignUp = () => {
         <div>
           <h2>Create Account</h2>
           <p style={{color:"red"}}>{error}</p>
-          <p style={{color:"red"}}>{}</p>
+          <p style={{color:"green"}}>{}</p>
           <form onSubmit={handleSubmit}>
               <div className='form-group'>
                  <label htmlFor="">Email Address:</label>
