@@ -28,7 +28,6 @@ const SignUp = () => {
     if (!email || !first_name || !last_name || !password || !password2){
       setTimeout(() => {
         setError("All fields are required")
-
       }, 2000);
 
     }else{
