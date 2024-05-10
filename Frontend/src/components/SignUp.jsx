@@ -29,7 +29,8 @@ const SignUp = () => {
       setError("All fields are required")
 
     }else{
-      setTimeout
+      setLoading(true)
+      setTimeout() => 
       console.log(formdata)
       
     }
