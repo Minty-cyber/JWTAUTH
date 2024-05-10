@@ -9,7 +9,9 @@ const SignUp = () => {
     password2: "",
   })
 
-  
+  const handleOnChange = (e) => {
+    
+  }
   return (
     <div className='form-container'>
       <div className='wrapper'>
