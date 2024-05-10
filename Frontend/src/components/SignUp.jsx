@@ -9,6 +9,8 @@ const SignUp = () => {
     password2:"",
   })
 
+  const { email, first_name, last_name, password, password2 } = formdata;
+
   const handleOnChange = (e) => {
     setFormData({
       ...formdata, [e.target.name]:e.target.value
