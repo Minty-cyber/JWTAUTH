@@ -40,7 +40,7 @@ const SignUp = () => {
       const res = await axios.post('http://localhost:8000/api/auth/register', formdata)// Add formdata to the backend 
       const response = res.data
       console.log(response)
-      if (res.status == 200) {
+      if (res.status == 201) {
         redirect("/otp/verify")
         toast.success(response.message)
 
