@@ -42,7 +42,7 @@ const SignUp = () => {
                  <input type="text"
                   className='email-form'  
                   name="email" 
-                  value={femail} 
+                  value={email} 
                   onChange={handleOnChange} 
                   />
                </div>
