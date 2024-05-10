@@ -81,8 +81,8 @@ const SignUp = () => {
                  <input type="text" 
                  className='email-form'  
                  name="password2" 
-                value={password2} 
-                onChange={handleOnChange} 
+                 value={password2} 
+                 onChange={handleOnChange} 
                  />
                </div>
                <input type="submit" value= "Submit" className='submitButton' />
