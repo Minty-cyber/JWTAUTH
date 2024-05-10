@@ -1,7 +1,9 @@
 import React , {useState} from 'react'
 
 const SignUp = () => {
-  const [formdata, setFormData]
+  const [formdata, setFormData] = useState({
+    
+  })
   return (
     <div className='form-container'>
       <div className='wrapper'>
