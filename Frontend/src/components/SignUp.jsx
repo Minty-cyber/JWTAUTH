@@ -32,7 +32,7 @@ const SignUp = () => {
       setLoading(true) //starting the loading when the form is submitted
       setTimeout() => {
         setLoading(false)
-        setSuccessMessage("Account Created")
+        setSuccessMessage("Account has been Created Successfully")
       }
       console.log(formdata)
       
