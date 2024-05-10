@@ -7,9 +7,6 @@ const SignUp = () => {
     last_name: "",
     password: "",
     password2: "",
-
-
-
   })
   return (
     <div className='form-container'>
