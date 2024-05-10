@@ -10,7 +10,9 @@ const SignUp = () => {
   })
 
   const handleOnChange = (e) => {
-    
+    setFormData({
+      
+    })
   }
   return (
     <div className='form-container'>
