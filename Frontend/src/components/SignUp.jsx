@@ -45,6 +45,8 @@ const SignUp = () => {
                   className='email-form'  
                   name="last_name" 
                   value={formdata.last_name}  
+                  onChange={handleOnChange} 
+
                   />
                </div>
                <div className='form-group'>
