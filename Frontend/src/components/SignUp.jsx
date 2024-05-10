@@ -38,7 +38,7 @@ const SignUp = () => {
                  <input type="text"
                   className='email-form'  
                   name="last_name" 
-                  // value={email}  
+                  value={form}  
                   />
                </div>
                <div className='form-group'>
