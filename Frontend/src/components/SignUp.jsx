@@ -79,7 +79,7 @@ const SignUp = () => {
                <div className='form-group'>
                  <label htmlFor="">Confirm Password:</label>
                  <input type="text" 
-                 className='p'  
+                 className='email-form'  
                  name="password2" 
                 value={password2} 
                 onChange={handleOnChange} 
