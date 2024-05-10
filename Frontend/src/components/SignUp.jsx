@@ -33,6 +33,9 @@ const SignUp = () => {
       }, 2000);
        //the error message disappears after some time
     }else{
+      setTimeout(() => {
+        
+      }, timeout);
       setLoading(true) //starting the loading when the form is submitted
       setTimeout(() => {
         setLoading(false); //Removing the loading from there
