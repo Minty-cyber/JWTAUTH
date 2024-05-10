@@ -33,6 +33,7 @@ const SignUp = () => {
       setTimeout(() => {
         setLoading(false);
         
+
       }
 
     )
