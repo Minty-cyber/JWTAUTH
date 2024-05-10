@@ -13,6 +13,7 @@ const SignUp = () => {
     setFormData({
       ...formdata, [e.target.name]:e.target.value
     })
+    console.log
   }
 
   const [error, setError] = useState("")
