@@ -10,8 +10,7 @@ const SignUp = () => {
   })
 
   const { email, first_name, last_name, password, password2 } = formdata; //Destructuring very important
-  changes
-  useState
+  const 
 
   const handleOnChange = (e) => {
     setFormData({
