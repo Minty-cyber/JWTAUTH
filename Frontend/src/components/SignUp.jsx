@@ -41,7 +41,7 @@ const SignUp = () => {
       response = res.data
       if (res.status == 200) {
         redirect("/otp/verify")
-        toast()
+        toast(response)
 
       }
       // setLoading(true) //starting the loading when the form is submitted
