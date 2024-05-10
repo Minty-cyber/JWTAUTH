@@ -34,7 +34,7 @@ const SignUp = () => {
         setLoading(false);
         setSuccessMessage("Account has been Created Successfully");
       }
-      console.log(formdata)
+      
       
     }
   }   
