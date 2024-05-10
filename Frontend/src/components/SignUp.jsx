@@ -38,7 +38,7 @@ const SignUp = () => {
        //the error message disappears after some time
     }else{
       const res = await axios.post('http://localhost:8000/api/auth/register', formdata)// Add formdata to the backend 
-
+      response = res.data
       if (res.status == 200) {
         redirect("/otp/verify")
         toast()
