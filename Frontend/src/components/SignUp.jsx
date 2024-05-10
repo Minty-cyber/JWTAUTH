@@ -23,6 +23,8 @@ const SignUp = () => {
     if (!email || !first_name || !last_name || !password || !password2){
       setError("All fields are required")
 
+    }else{
+      
     }
   }   
   return (
