@@ -11,7 +11,7 @@ const SignUp = () => {
 
   const { email, first_name, last_name, password, password2 } = formdata; //Destructuring very important
   const [loading, setLoading] = useState(false);
-  const [successmessage, SuccessState] = useState("");
+  const [successmessage, setSuccess] = useState("");
 
 
   const handleOnChange = (e) => {
