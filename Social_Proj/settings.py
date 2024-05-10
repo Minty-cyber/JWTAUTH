@@ -170,3 +170,10 @@ EMAIL_USE_TLS = True
 GOOGLE_CLIENT_ID = env('GOOGLE_CLIENT_ID')
 GOOGLE_CLIENT_SECRET = env('GOOGLE_CLIENT_SECRET')
 SOCIAL_AUTH_PASSWORD = env('SOCIAL_AUTH_PASSWORD')
+
+CORS_ALLOWED_ORIGINS = [
+    "https://example.com",
+    "https://sub.example.com",
+    "http://localhost:8080",
+    "http://127.0.0.1:9000",
+]
