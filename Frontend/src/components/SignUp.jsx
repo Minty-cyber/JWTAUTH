@@ -42,7 +42,6 @@ const SignUp = () => {
       if (res.status == 201) {// a new entry is created  and 
         redirect("/otp/verify") // the user is redirected to the verify email page
         toast.success(response.message)// 
-
       }
       // setLoading(true) //starting the loading when the form is submitted
       // setTimeout(() => {
