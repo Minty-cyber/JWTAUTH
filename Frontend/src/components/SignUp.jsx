@@ -29,7 +29,7 @@ const SignUp = () => {
       setTimeout(() => {
         setError("All fields are required")
       }, 2000); //the error message disappears after some time
-      
+
 
     }else{
       setLoading(true) //starting the loading when the form is submitted
