@@ -11,7 +11,7 @@ const SignUp = () => {
 
   const { email, first_name, last_name, password, password2 } = formdata; //Destructuring very important
   const [loading, setLoading] = useState(false);
-  const [successmessage, setSuccessMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
 
 
   const handleOnChange = (e) => {
@@ -47,7 +47,7 @@ const SignUp = () => {
         <div>
           <h2>Create Account</h2>
           <p style={{color:"red"}}>{error}</p>
-          <p style={{color:"green"}}>{}</p>
+          <p style={{color:"green"}}>{successMessage}</p>
           <form onSubmit={handleSubmit}>
               <div className='form-group'>
                  <label htmlFor="">Email Address:</label>
