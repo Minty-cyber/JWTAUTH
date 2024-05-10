@@ -15,10 +15,13 @@ const SignUp = () => {
     })
   }
 
+  const [error, setError] = useState({})
+
   const handleSubmit = (e) =>{
     e.preventDefault()
     if (!email || !first_name || !last_name || !password || !password2)
-  }
+
+  }   
   return (
     <div className='form-container'>
       <div className='wrapper'>
