@@ -12,7 +12,7 @@ function App() {
     <>
 
     <Router>
-      <ToastConstainer></ToastConstainer>
+      <ToastContainer></ToastContainer>
       <Routes>
         <Route path='/' element = {<SignUp/>} />
         <Route path='/login' element = {<LogIn/>} />
