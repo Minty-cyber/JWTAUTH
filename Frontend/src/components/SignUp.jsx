@@ -42,7 +42,7 @@ const SignUp = () => {
       console.log(response)
       if (res.status == 201) {
         redirect("/otp/verify")
-        toast.success(response.message)
+        toast.success(response.message)// 
 
       }
       // setLoading(true) //starting the loading when the form is submitted
