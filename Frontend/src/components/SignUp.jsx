@@ -113,10 +113,7 @@ const SignUp = () => {
                  onChange={handleOnChange} 
                  />
                </div>
-               <button type="submit" className='submitButton' disabled={loading}>
-              {loading ? 'Loading...' : 'Submit'}
-            </button>
-          </form>
+               <input type="submit" className='submitButton' ></input>
         </div>
       </div>
     </div>
