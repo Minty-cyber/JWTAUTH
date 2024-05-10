@@ -27,9 +27,9 @@ const SignUp = () => {
     e.preventDefault();
     if (!email || !first_name || !last_name || !password || !password2){
       setTimeout(() => {
-        
-      }, timeout);
-      setError("All fields are required")
+        setError("All fields are required")
+
+      }, 2000);
 
     }else{
       setLoading(true) //starting the loading when the form is submitted
