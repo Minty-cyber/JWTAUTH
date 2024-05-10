@@ -33,7 +33,6 @@ const SignUp = () => {
       setTimeout(() => {
         setLoading(false);
         setSuccessMessage("Account Created Successfully")
-
       },)
       
       
