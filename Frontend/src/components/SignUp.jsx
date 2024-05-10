@@ -54,7 +54,7 @@ const SignUp = () => {
                  <input type="text" 
                  className='p'  
                  name="password2" 
-                //  value={password2} 
+                value={password2} 
                  />
                </div>
                <input type="submit" value= "Submit" className='submitButton' />
