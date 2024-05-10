@@ -35,7 +35,7 @@ const SignUp = () => {
       }, 2000);
        //the error message disappears after some time
     }else{
-      const res = await axios.post('http://localhost:8000/api/auth/register', formdata)// Add da
+      const res = await axios.post('http://localhost:8000/api/auth/register', formdatata)// Add da
 
       if (res.status == 200) {
         
