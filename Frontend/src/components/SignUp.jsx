@@ -5,7 +5,9 @@ const SignUp = () => {
     email: "",
     first_name: "",
     last_name: "",
-    
+    last_name: "",
+
+
   })
   return (
     <div className='form-container'>
