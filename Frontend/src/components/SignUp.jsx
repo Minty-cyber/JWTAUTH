@@ -10,7 +10,7 @@ const SignUp = () => {
   })
 
   const { email, first_name, last_name, password, password2 } = formdata; //Destructuring very important
-  const [loading, loadingState] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [successmessage, SuccessState] = useState("");
 
 
@@ -29,7 +29,7 @@ const SignUp = () => {
       setError("All fields are required")
 
     }else{
-      
+      set
       console.log(formdata)
       
     }
