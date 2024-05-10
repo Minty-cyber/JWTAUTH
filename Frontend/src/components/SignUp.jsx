@@ -16,7 +16,7 @@ const SignUp = () => {
   }
 
   const handleSubmit = (e) =>{
-    e.preventDefault
+    e.preventDefault()
   }
   return (
     <div className='form-container'>
