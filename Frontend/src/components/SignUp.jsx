@@ -3,6 +3,7 @@ import axios from 'axios'
 import {useNavigate} from "react-router-dom"
 
 const SignUp = () => {
+  const redirect = useNavigate();
   const [formdata, setFormData] = useState({
     email:"",
     first_name:"",
