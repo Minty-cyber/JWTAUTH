@@ -46,7 +46,7 @@ const SignUp = () => {
                  <input type="password"
                   className='email-form'  
                   name="password" 
-                  value={formdata.password2}  
+                  value={formdata.password}  
                   />
                </div>
                <div className='form-group'>
