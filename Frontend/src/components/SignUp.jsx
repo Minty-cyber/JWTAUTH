@@ -6,7 +6,7 @@ const SignUp = () => {
     first_name:"",
     last_name:"",
     password:"",
-    password2: "",
+    password2:"",
   })
 
   const handleOnChange = (e) => {
