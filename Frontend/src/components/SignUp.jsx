@@ -27,7 +27,7 @@ const SignUp = () => {
     e.preventDefault();
     if (!email || !first_name || !last_name || !password || !password2){
       setTimeout(() => {
-        setError("All fields are required")
+        setError("All fields are required");
       }, 2000); //the error message disappears after some time
 
 
