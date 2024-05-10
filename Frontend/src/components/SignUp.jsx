@@ -39,7 +39,7 @@ const SignUp = () => {
       const res = await axios.post('http://localhost:8000/api/auth/register', formdata)// Add formdata to the backend 
 
       if (res.status == 200) {
-        
+        redirect
       }
       // setLoading(true) //starting the loading when the form is submitted
       // setTimeout(() => {
