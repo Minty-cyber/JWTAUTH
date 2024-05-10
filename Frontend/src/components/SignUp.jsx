@@ -15,7 +15,9 @@ const SignUp = () => {
     })
   }
 
-  
+  const handleSubmit = (e) =>{
+    
+  }
   return (
     <div className='form-container'>
       <div className='wrapper'>
