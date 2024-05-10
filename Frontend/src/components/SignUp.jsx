@@ -66,7 +66,6 @@ const SignUp = () => {
                  name="password2" 
                 value={formdata.password2} 
                 onChange={handleOnChange} 
-
                  />
                </div>
                <input type="submit" value= "Submit" className='submitButton' />
