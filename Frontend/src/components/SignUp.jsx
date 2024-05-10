@@ -10,7 +10,7 @@ const SignUp = () => {
   })
 
   const { email, first_name, last_name, password, password2 } = formdata; //Destructuring very important
-  const 
+  const [loading, loadingState]
 
   const handleOnChange = (e) => {
     setFormData({
