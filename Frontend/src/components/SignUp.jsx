@@ -8,6 +8,8 @@ const SignUp = () => {
     password: "",
     password2: "",
   })
+
+  
   return (
     <div className='form-container'>
       <div className='wrapper'>
