@@ -37,7 +37,7 @@ const SignUp = () => {
       }, 2000);
        //the error message disappears after some time
     }else{
-      const response = await axios.post("http://localhost:8000/api/auth/register/", formdata)// Add formdata to the backend 
+      const response = await axios.get("http://localhost:8000/api/auth/register/", formdata)// Add formdata to the backend 
       console.log(response.data)
       if (res.status == 201) {// a new entry is created  and 
         redirect("/otp/verify") // the user is redirected to the verify email page
