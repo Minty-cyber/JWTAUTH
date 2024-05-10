@@ -21,7 +21,7 @@ const SignUp = () => {
   const [error, setError] = useState("")
 
   const handleSubmit = (e) =>{
-    e.preventDefault()
+    e.preventDefault();
     if (!email || !first_name || !last_name || !password || !password2){
       setError("All fields are required")
 
