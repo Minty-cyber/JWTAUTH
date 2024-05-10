@@ -2,6 +2,7 @@ import React , {useState} from 'react'
 import axios from 'axios'
 import {useNavigate} from "react-router-dom"
 
+
 const SignUp = () => {
   const redirect = useNavigate();
   const [formdata, setFormData] = useState({
@@ -40,7 +41,7 @@ const SignUp = () => {
 
       if (res.status == 200) {
         redirect("/otp/verify")
-        
+
       }
       // setLoading(true) //starting the loading when the form is submitted
       // setTimeout(() => {
