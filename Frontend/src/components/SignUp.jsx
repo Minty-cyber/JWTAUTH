@@ -33,13 +33,11 @@ const SignUp = () => {
       }, 2000);
        //the error message disappears after some time
     }else{
-      setTimeout(() => {
-       setLoading(true) //starting the loading when the form is submitted
-      }, 2000);
+      setLoading(true) //starting the loading when the form is submitted
       setTimeout(() => {
         setLoading(false); //Removing the loading from there
         setSuccessMessage("Account Created Successfully") //Initializing the message
-      },2000)
+      },)
       
       
     }
