@@ -20,7 +20,7 @@ const SignUp = () => {
   const handleSubmit = (e) =>{
     e.preventDefault()
     if (!email || !first_name || !last_name || !password || !password2)
-
+      setError
   }   
   return (
     <div className='form-container'>
