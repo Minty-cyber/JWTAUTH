@@ -1,7 +1,7 @@
 import React , {useState} from 'react'
 
 const SignUp = () => {
-  const 
+  const [formdata, setFormData]
   return (
     <div className='form-container'>
       <div className='wrapper'>
