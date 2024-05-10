@@ -81,7 +81,7 @@ const SignUp = () => {
                  <input type="text" 
                  className='p'  
                  name="password2" 
-                value={formdata.password2} 
+                value={password2} 
                 onChange={handleOnChange} 
                  />
                </div>
